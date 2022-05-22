@@ -25,12 +25,11 @@ header{
 }
 #menu-bar  {
     font-size:25px;
-    position: fixed;
+    position: relative;
     right: 0;
     top: 0;
     z-index: 10;
-    padding-right: 20px;
-    padding-top: 20px;
+    
 }
 nav ul{
     list-style-type: none; 
