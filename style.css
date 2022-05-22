@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+:root{
+    --fonte-padrao : "Oxygen"
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.on{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #521a6642;   
+    position: relative;
+}
+#menu-bar  {
+    font-size:25px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+nav ul{
+    list-style-type: none; 
+    background-color: #521A66;   
+    padding: 10px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;    
+}
+nav ul li a{
+    width: 100vw;
+    text-decoration: none;
+    padding: 30px 0;        
+    color: white;
+    display: block;
+    text-align: center;
+    transition: .3s;
+    font-size: 2em;
+}
+nav ul li a:hover{
+    background: #612674;
+}
+.logo{
+    display: none;
+}
+.banner{
+    padding:20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.banner h3{
+    color: #521A66;
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.banner p{
+    color: #521A66;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 10px;
+}
+.banner button{
+    color: white;
+    background-color: #58c4c4;
+    border: none;
+    width: 50vw;
+    padding: 10px ;
+    border-radius: 5px;
+}
+.options{
+    padding: 20px 10px 40px 10px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.options div{
+    text-align: center;
+    margin: 15px 0;
+}
+.options div span{
+    font-size: 50px;
+    color: #521A66;
+}
+.options h2{
+    color: #521A66;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    letter-spacing: 2px;
+}
+.principal{
+    padding: 15px 0;
+    width: 90%;
+    margin: auto;
+    font-family: var(--fonte-padrao)
+}
+.principal h2{
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #521A66;
+    letter-spacing: 3px;
+    padding: 10px 0;
+}   
+.principal p{
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-size: 12px;
+}
+.principal button{  color: white;
+    background-color: #58c4c4;
+    border: none;
+    width: 50vw;
+    padding: 10px ;
+    border-radius: 5px;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #303d4c;
+    padding: 5px 0;
+}
+footer a{
+    text-decoration: none;
+    margin: 0 8px; 
+    color: white;  
+    font-size: 14px; 
+    transition: .4s;
+}
+footer a:hover{
+    font-size: 30px;
+}
+footer p{
+    text-align: center;
+    padding: 10px 10px 30px 0;
+    color:#83969f;
+    background-color: #25303e;
+    font-size: 13px;
+}
+button{
+    transition: .3s;
+}
+button:hover{
+    background-color: #2f6868;
+}
+@media (min-width:750px){
+    .banner{
+        background-color: #521A66;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding:20px 5%;
+    }
+    .logo {
+        display: block; 
+        color: white;       
+        width: 10%;
+    }
+    
+    .banner h3 {
+        color:white;
+        font-size: 22px;
+    }
+    .banner p{
+        color: white;
+    }
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .options div{
+        width: 45%;
+    }
+    .banner button{
+        width: 200px;
+    }    
+}
+@media (min-width:1020px){
+    .banner{
+       background: #521a66 url(images/bg_topo_1198x670.jpg);
+       background-repeat: no-repeat;
+       background-position: bottom;
+       padding-top: 17em;
+       height: 100vh ;       
+    }
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        padding: 5px 5px;
+    }
+    #menu-bar{
+        display: none;
+    }
+    .on{
+        display: block;
+    }
+    nav ul{
+        position: relative;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        background-color: white;
+        padding: 0;        
+    }
+    nav ul li{
+        margin-right: 5px;
+    }
+    nav ul li a{
+        width: auto;
+        color: #521A66;
+        padding: 15px;
+    }
+    nav ul li a:hover{
+        background-color: white;
+        cursor:pointer;
+        color: #9f33c7;
+    }
+}
+@media (min-width:1180px){
+    .banner{
+        background: #521A66 url(images/bg_topo_1600x1374.jpg);
+        height: 130vh;
+        
+    }
+    .options {
+        padding: 0 7%;
+    }
+    .options div{
+        width: 20%;        
+    }
+    .options div span{
+        font-size: 60px;
+    }
+    .options div p{
+        letter-spacing: 2px;
+    }
+    .principal{
+        padding: 0 3%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article{
+        width: 500px;
+    }
+    article h2{
+        font-family: var(--fonte-padrao);
+        font-weight: 700;
+        font-size: 3em;
+    }
+    .principal button{
+        margin-top: 20px;
+        width: 15vw;
+        margin-bottom: 20px;
+    }
+    nav ul li a:hover{
+        background-color: white;
+        cursor:pointer;
+        color: #9f33c7;
+    }
+    
+}
+
+
+
